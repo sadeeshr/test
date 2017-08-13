@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo for Smartjuice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+<style>
+  .thumb {
+    height: 100px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+      <h1>Smartjuice</h1>
+  <p>Welcome <output id="username"></output></p> 
+    <div class="container">
+        <br>First Name: <output id="firstname"></output>
+        <br>Last Name: <output id="lastname"></output>
+        <br>Email Address: <output id="email"></output>
+        
+    </div>
+    <div id="settings">
+        <br>Enter Ethereum Key: <input type="text" class="form-control" placeholder="Ethereum Key" id="ethkey">
+        <br>
+
+    
+    <input id="filepath" type="text"> <button class="btn btn-info" onclick="getfile()">Open</button> <button class="btn btn-danger" onclick="deletefile()">delete</button>
+    <input type="file" id="fileinput" />  <button class="btn btn-info" onclick="uploadfile()">Upload Profile pic</button> 
+    <br><br>
+    Profile Picture: 
+    <button class="btn btn-large btn-success" onclick="showfiles()">Show files</button>
+    <div id="fileshow"></div>
+    <br><br>
+    </div>    
+    
+    <a class="btn btn-large btn-danger" href="index.html">Logout</a> <button class="btn btn-large btn-success" onclick="save()">Save Profile</button>
+    <!-- <button class="btn btn-large btn-success" onclick="register()">Upload Profile pic</button> -->
+  <!-- <div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+<div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+<div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+  </div> -->
+
+  <script type="text/javascript" src="index.js"></script>
+<script>
+    getProfile();
+  // get the file contents
+    document.getElementById('fileinput').addEventListener('change', handleFileSelect, false);
+</script>
+
+</body>
+</div>
+</body>
+</html>

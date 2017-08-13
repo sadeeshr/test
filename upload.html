@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo for Smartjuice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+  <h1>Upload File</h1>
+  <p></p> 
+    <div class="container">
+        <span>Public ID</span>
+        <br><input type="text" class="form-control" placeholder="Enter your Public ID" id="publicid">
+        <br><span>Service Name</span>
+        <br><input type="text" class="form-control" placeholder="Enter your Service Name" id="service"> 
+        <br><input type="file" id="fileinput" />
+        <br><div id="byte_content"></div>
+    </div>
+    <br>
+    <br>
+    <a class="btn btn-large btn-info" href="home.html">Back</a>   <button class="btn btn-large btn-success" onclick="upload()">Upload</button> 
+    <div id="slink"></div>
+    <!--<br><br>
+    <button class="btn btn-large btn-warning" onclick="fetch_file()">View Uploaded file</button>
+    <br><output id="pic"></output>        -->
+</div>
+<br><br>
+<!-- <div class="container">
+  <label for="sadelog">Status:</label>
+  <textarea id='sadelog' class="form-control" rows="10"></textarea>
+</div> -->
+
+<script type="text/javascript" src="index.js"></script>
+<script>
+  // get the file contents
+    document.getElementById('fileinput').addEventListener('change', handleFileSelect, false);
+</script>
+
+</body>
+</html>
